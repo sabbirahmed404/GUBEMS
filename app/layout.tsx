@@ -6,16 +6,13 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
-
 })
-
-
 
 export const metadata: Metadata = {
   title: "GUBEMS",
   description: "GUBEMS is a Event Management Solution",
   icons: {
-    icon: 'assets/images/logo.svg'
+    icon: '/logo.svg'
   }
 };
 
@@ -26,8 +23,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={poppins.variable}>{children}
+      <body className={poppins.variable}>
+        {children}
       </body>
     </html>
   )
